@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255, 1);
+}
+
+.preloader img {
+    width: 350px;
+    height: 300px;
+}
+
+body {
+    width: 600px;
+    height: 440px;
+    padding: 10px 15px;
+    background: none;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1.app-title {
+        color: #000;
+    }
+    span.settings-button {
+        height: 20px;
+        width: 20px;
+        background: url('chrome-extension://__MSG_@@extension_id__/images/settings.png') no-repeat;
+        background-size: 20px 20px;
+        background-position: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.main {
+    height: 410px;
+    iframe {
+       width: 100%;
+       height: 100%;
+       border: none;
+    }
+}
